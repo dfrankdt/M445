@@ -16,5 +16,9 @@ for j=1:n
         Q(i+1, j+1) = Q(i+1, j+1)/(x(i+1) - x(i-j+1));
     end
 end
-Q
+
+%% To see the matrix Q, uncomment the following
+
+%Q
+
 P = Q(end, end);
