@@ -1,6 +1,9 @@
-n = 4;
+% Bradie: section 5.4, figure 10
 
-[x, T] = doChebyshev(4);
+clear
+n = 4;
+x = linspace(-1, 1, 2^9+1);
+
+T = doChebyshev(x, 4);
 
 plot(x, T(2:end, :), 'k')
-axis([-1.1 1.1 -1.1 1.1])
