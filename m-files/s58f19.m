@@ -50,7 +50,7 @@ x = [1550;
   xlabel('Run size')
   ylabel('Total production cost (thousands of dollars)')
   
-  % linear fit via gradient approach
+  %% linear fit via gradient approach
   n = length(x);
   xbar = sum(x)/n;
   ybar = sum(y)/n;
@@ -58,7 +58,7 @@ x = [1550;
   b = (n*sum(x.*y) - sum(x)*sum(y))/(n*sum(x.*x) - sum(x)^2)
   a = ybar - b*xbar
   
-  xhat = [500 350];
+  xhat = [500 3500];
   yhat = a + b*xhat;
   
   plot(x, y/1000, '*', xhat, yhat/1000, 'k')

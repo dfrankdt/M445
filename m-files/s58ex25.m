@@ -37,6 +37,13 @@ a = exp(u(2))
 Chat = linspace(min(C), max(C), 2^9+1);
 Lhat = a*exp(b*Chat);
 
+subplot(2,2,2)
+plot(C, log(L), '*k', Chat, log(a) + b*Chat, 'k')
+title('Exponential law')
+xlabel('CD sales, millions of units')
+ylabel('log(LP sales)')
+
+
 subplot(2,2,4)
 plot(C, L, '*k', Chat, Lhat, 'k')
 title('Regression curve')
