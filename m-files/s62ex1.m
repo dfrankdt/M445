@@ -1,4 +1,5 @@
 % Bradie: section 6.2, example 1
+% Update: 1 May 2017
 
 %% do the forward differences
 for k = 1:4

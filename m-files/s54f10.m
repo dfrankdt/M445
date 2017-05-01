@@ -1,4 +1,5 @@
 % Bradie: section 5.4, figure 10
+% Update: 1 May 2017
 
 clear
 n = 4;

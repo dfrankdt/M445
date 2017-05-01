@@ -1,4 +1,5 @@
 % Bradie: section 6.2, example 3
+% Update: 1 May 2017
 
 %% do the second order forward difference
 for k = 1:4
