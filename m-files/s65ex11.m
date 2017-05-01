@@ -1,4 +1,5 @@
 % Bradie: section 6.5, example 6.11
+% Update: 1 May 2017
 clear
 
 % Goal: demonstrate O(h^2) rate of convergence for definite integral of

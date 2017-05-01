@@ -1,5 +1,7 @@
 % Bradie: section 6.5, estimate pi
-
+% Update: 1 May 2017
+clear
+    
 % Goal: estimate pi to within 5e-5 using a definite integral of the
 % function f(x) = 1/(1+x^2) on [0, 1].
 

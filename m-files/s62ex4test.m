@@ -1,3 +1,6 @@
+% Bradie: section 6.2, example 4 test
+% Update: 1 May 2017
+
 % Why does the error in section 6.2, example 4 creep in at about h =
 % 10^(-5) or 10^(-6)?
 

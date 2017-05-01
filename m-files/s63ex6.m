@@ -1,5 +1,7 @@
 % Bradie: section 6.3, example 6
+% Update: 1 May 2017
 clear
+
 % Goal: approximate f'(x0) for f(x) = ln(x) at x0 = 2.
 
 % Dh is the central difference approximation

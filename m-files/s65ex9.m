@@ -1,4 +1,5 @@
 % Bradie: Section 6.5, example 9
+% Update: 1 May 2017
 clear; clc
 
 % Goal: approximate the value of the definite integral of f(x) = sin(x) on

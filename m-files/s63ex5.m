@@ -1,4 +1,5 @@
 % Bradie: section 6.3, example 5
+% Update: 1 May 2017
 
 % Reconsider approximation of f'(2) for f(x) = ln(x)
 

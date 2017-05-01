@@ -1,8 +1,9 @@
 % Bradie: section 6.3, example 7
-
+% Update: 1 May 2017
+clear
+    
 % Goal: Estimate f'(x0) for f(x) = arctan(x) at x0 = 2.
 
-clear
 x0 = 2;
 
 % Dh is the foward difference approximation
