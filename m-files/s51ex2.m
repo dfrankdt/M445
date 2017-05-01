@@ -1,4 +1,5 @@
 % Bradie: section 5.1, example 2
+% Update: 1 May 2017
 clear
 
 x = [0 1.6 3.8 4.5 6.3 9.2 10];

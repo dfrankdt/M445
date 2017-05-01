@@ -1,4 +1,5 @@
 % Bradie: section 5.1 example 1
+% Update: 1 May 2017
 clear
 
 x = 400;

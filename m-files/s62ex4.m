@@ -1,4 +1,5 @@
 % Bradie: section 6.2, example 4
+% Update: 1 May 2017
 
 % Goal: approximate f'(0) for f(x) = exp(x) with second order central
 % difference.

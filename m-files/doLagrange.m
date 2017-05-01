@@ -1,5 +1,6 @@
 function P = doLagrange(x, f, t)
 % DOLAGRANGE
+% Update: 1 May 2017
 %
 % Goal: 
 %  Create the Lagrange form of the interpolating polynomial through

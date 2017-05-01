@@ -1,5 +1,6 @@
 function a = doDividedDiff(x, f)
 % DODIVIDEDDIFFERRENCE
+% Update: 1 May 2017
 %
 % Goal:
 %  Algorithm for performing divided differences in order to obtain

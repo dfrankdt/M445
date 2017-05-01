@@ -1,6 +1,5 @@
 % Bradie: section 5.5 motivating examples
-%%
-
+% Update: 1 May 2017
 
 t = linspace(-1, 1, 2^9+1);
 

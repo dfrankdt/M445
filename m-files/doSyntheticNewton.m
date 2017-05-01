@@ -1,5 +1,6 @@
 function P = doSyntheticNewton(a, x, t)
 % DOSYNTHETICNEWTON
+% Update: 1 May 2017
 %
 % Goal: 
 %  Apply the Synthetic division algorithm to contruct the values of

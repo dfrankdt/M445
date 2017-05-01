@@ -1,5 +1,7 @@
 % Bradie: section 5.6, example 18
+% Update: 1 May 2017
 clear
+
 % Goal: Get the clamped cubic spline to f(x) = (x+1)exp(-x) on [-1, 1].
 %
 % Note that the value of the derivative at the endpoints is f'(-1) = exp(1)

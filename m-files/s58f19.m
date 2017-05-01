@@ -1,4 +1,5 @@
 % Bradie: Section 5.8, Figure 5.19
+% Update: 1 May 2017
 
 clear; close all
 

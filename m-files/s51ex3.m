@@ -1,4 +1,5 @@
 % Bradie: section 5.1, example 3.
+% Update: 1 May 2017
 clear
 
 P = [308.6 362.6 423.3 491.4];

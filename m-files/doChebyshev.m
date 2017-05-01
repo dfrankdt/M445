@@ -1,5 +1,6 @@
 function T = doChebyshev(t, n)
 % DOCHEBYSHEV
+% Update: 1 May 2017
 % 
 % Goal: 
 %  Return the zeroth through nth order Chebyshev polynomials on the

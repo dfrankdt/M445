@@ -1,5 +1,6 @@
 function Pbar = doNeville(x, f, xbar)
 % DONEVILLE
+% Update: 1 May 2017
 %
 % Goal: 
 %  Use Neville's algorithm to evaluate the interpolating polynomial P
