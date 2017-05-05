@@ -17,6 +17,7 @@ x0 = 1;
 
 ntests = 8;
 err = zeros(ntests, 1);
+appx = zeros(ntests, 1);
 
 for k=1:ntests
     pn = k-1;

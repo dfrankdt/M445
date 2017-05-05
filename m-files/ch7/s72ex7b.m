@@ -1,4 +1,4 @@
-function s72ex6
+function s72ex6b
 % Bradie: section 7.2, example 6
 %
 % Note: this is a Matlab function rather than a script.
@@ -14,6 +14,9 @@ function s72ex6
 a = 0; b = 5;
 x0 = 1;
 ntests = 8;
+err = zeros(ntests, 1);
+appx = zeros(ntests, 1);
+
 
 for k=1:ntests
     pn = k-1;

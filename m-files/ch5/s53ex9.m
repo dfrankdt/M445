@@ -5,7 +5,7 @@ clear
 
 % input the data
 w = [10 20 40 60 80 100];
-V = [1.498 2.138 2.840 2.542 1.877];
+V = [1.498 2.138 2.840 2.542 1.877 1.201];
 
 % get the coefficients
 a = doDividedDiff(w, V);
