@@ -16,40 +16,50 @@ N = 10;
 h = (b-a)/N;
 
 t = a:h:b; t = t(:);
-w = zeros(size(t));
 
-w(1) = x0;
+% Get the solution through a second order Taylor method
 
-% Get the one additional value through a second order one-step method,
-% specifically here we use a second order Taylor method.
-
-k1 = f(t(1), w(1));
-k2 = (t(1)*f(t(1), w(1)) - w(1))/(t(1))^2;
-
-dw = k1*h + 1/2*k2*h^2;
-w(2) = w(1) + dw;
-
-% implement the multistep method.
-b2 = f(t(1), w(1))*h;
-for i=2:N
-    b1 = f(t(i), w(i))*h;
+wt = zeros(size(t));
+wt(1) = x0;
+for i=1:N
+    [ft, fpt] = f_taylor(t(i), wt(i));
+    dw = ft*h + 1/2*fpt*h^2;
     
-    dw = (3*b1 - b2)/2;
-    w(i+1) = w(i) + dw;
-    
-    % overwrite b2 with b1 for the next step.
-    b2 = b1;
+    wt(i+1) = wt(i) + dw;
 end
 
-% get exact solution
+% do the multistep method
+wm = zeros(size(t));
+
+wm(1) = x0;
+% Get the one additional value through a second order one-step method,
+% specifically here we the previously computed second order Taylor method.
+
+wm(2) = wt(2);
+
+% implement the multistep method.
+f2 = f(t(1), wm(1))*h;
+for i=2:N
+    f1 = f(t(i), wm(i))*h;
+    
+    dw = (3*f1 - f2)/2;
+    wm(i+1) = wm(i) + dw;
+    
+    % overwrite f2 with f1 for the next step.
+    f2 = f1;
+end
+
+% get exact solution, errors
 x = t.*(1 + log(t));
+et = abs(x - wt);
+em = abs(x - wm);
 
 % pretty print results
 
-pfmt = '%.1f\t %.6f\t %.6f\n';
-
+pfmt = '%.1f\t %.6f\t %.6f\t %.6f\t %.6f\t %.6f\n';
+fprintf('Time\t Multistep\t Error\t\t Taylor\t\t Error\t\t Ratio of errors\n')
 for i=1:N+1
-    fprintf(pfmt, t(i), w(i), abs(x(i)-w(i)))
+    fprintf(pfmt, t(i), wm(i), em(i), wt(i), et(i), em(i)/et(i))
 end
 
     
@@ -58,4 +68,9 @@ end
 
 function rhs = f(t, x)
     rhs = 1 + x/t;
+end
+
+function [y, yp] = f_taylor(t, x)
+    y = 1 + x/t;
+    yp = (t*y - x)/t^2;
 end
