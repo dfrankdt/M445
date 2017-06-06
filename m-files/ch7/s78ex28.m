@@ -6,7 +6,7 @@ function s78ex28
 % the phase plane.
 
 a = 0; b = 20;
-N = 1e5;
+N = 450;
 h = (b-a)/N;
 
 t = a:h:b; t = t(:);

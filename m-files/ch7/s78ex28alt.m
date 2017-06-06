@@ -11,7 +11,7 @@ w0 = [0.75 0];
 [t, w] = ode45(@f, [a b], w0);
 
 subplot(1, 2, 1)
-plot(t, w(:, 1), 'r', t, w(:, 2), '--r')
+plot(t, w(:, 1), '-or', t, w(:, 2), '--r')
 xlabel('t')
 ylabel('position/velocity')
 legend('position', 'velocity', 'Location', 'SouthEast')

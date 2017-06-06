@@ -22,6 +22,7 @@ for k=1:ntests
     
     % do the trapezoidal rule
     T(k) = (sum(f(1:n)) + sum(f(2:n+1)))*h/2;
+    T(k) = (sum(f(1:n)) + sum(f(2:n+1)))*h/2 - h^2/12*(-4*exp(-1));
 end
 
 % pretty print the results
