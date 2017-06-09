@@ -48,8 +48,8 @@ end
 
 % get Fig 8.5, uncomment this
 
-% plot(x, u, x, w, 'bd')
-% xlabel('x')
-% ylabel('u(x)')
-% axis([0 1 -1 0])
-% legend('Exact', 'Approximate')
+ plot(x, u, x, w, 'bd')
+ xlabel('x')
+ ylabel('u(x)')
+ axis([0 1 -1 0])
+ legend('Exact', 'Approximate')
